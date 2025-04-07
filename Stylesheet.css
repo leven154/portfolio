@@ -1,0 +1,485 @@
+/* Basic Reset */
+@font-face {
+    font-family: 'Alpino';
+    src: url('Alpino-Regular.otf');
+    font-weight: normal;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+about. {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+/* Body Styling */
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh; /* Ensures the body takes the full height of the viewport */
+    background-color: #f8f5e5; /* This is a nice cream shade */
+}
+
+
+/* Header Styling */
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Moves 'Ari Leventhal' to the left and nav to the right */
+    align-items: center;
+    font-family: 'Alpino';
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 20px; /* Adds space from the left edge */
+    font-family: 'Alpino';
+}
+
+/* Navigation Styling */
+nav {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%); /* Centers the navigation in the middle */
+    font-family: 'Alpino';
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: black; /* Removes white background color */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Workspace Container Styling */
+#workspace {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centers the background image */
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    display: none;
+}
+
+/* Background Image Styling */
+#background {
+    display: block;
+    max-width: 80%; /* Adjust to ensure it's not full screen */
+    max-height: 80vh; /* Limit the height to 80% of the viewport height */
+    object-fit: contain;
+}
+
+/* Button and Sticker Styles */
+.nav-btn {
+}
+
+/* Ensure the tool (coins) is positioned properly */
+.tool {
+    position: absolute;
+    width: 120px; /* Adjust as needed */
+    height: 100px;
+    display: block;
+    overflow: show;
+    top: 260px; /* Adjust position */
+    left: 537px; /* Adjust position */
+}
+
+/* Wrap both images inside a container to keep them aligned */
+.tool img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Show the black-and-white version by default */
+.tool .bw {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hide the color version initially */
+.tool .color {
+    opacity: 0;
+    transform: scale(1);
+}
+
+/* Hover effect: Hide BW, show color, and slightly enlarge */
+.tool:hover .bw {
+    opacity: 0;
+}
+
+.tool:hover .color {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+.Glasses {
+    position: absolute;
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+    top: 340px; /* Adjust position */
+    left: 299px; /* Adjust position */
+}
+
+.Glasses {
+    position: relative; /* Makes it the reference for absolutely positioned children */
+    width: 200px; /* Adjust as needed */
+    height: 160px;  /* Adjust as needed */
+    display: block;
+}
+
+/* Wrap both images inside the container */
+.Glasses img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Keeps aspect ratio while fitting */
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Show the black-and-white version by default */
+.Glasses .bw {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1; /* Ensure it's above the color image initially */
+}
+
+/* Hide the color version initially */
+.Glasses .color {
+    opacity: 0;
+    transform: scale(1);
+    z-index: 2; /* Ensure it appears when hovered */
+}
+
+/* Hover effect: Hide BW, show color, and slightly enlarge */
+.Glasses:hover .bw {
+    opacity: 0;
+}
+
+.Glasses:hover .color {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+
+.Glue {
+    position: absolute;
+    width: 170px; /* Adjust as needed */
+    height: 283px;
+    top: 360px; /* Adjust position */
+    left: 520px; /* Adjust position */
+    display: block;
+}
+
+/* Wrap both images inside a container to keep them aligned */
+.Glue img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Show the black-and-white version by default */
+.Glue.bw {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hide the color version initially */
+.Glue .color {
+    opacity: 0;
+    transform: scale(1);
+}
+
+/* Hover effect: Hide BW, show color, and slightly enlarge */
+.Glue:hover .bw {
+    opacity: 0;
+}
+
+.Glue:hover .color {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+
+
+
+.Music {
+    position: absolute;
+    width: 230px; /* Adjust as needed */
+    height: 230px;
+    display: block;
+    top: 5px; /* Adjust position */
+    left: 9px; /* Adjust position */
+}
+
+/* Wrap both images inside a container to keep them aligned */
+.Music img {
+    position: absolute;
+    top: 40px;
+    left: 540px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Show the black-and-white version by default */
+.Music .bw {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hide the color version initially */
+.Music .color {
+    opacity: 0;
+    transform: scale(1);
+}
+
+/* Hover effect: Hide BW, show color, and slightly enlarge */
+.Music:hover .bw {
+    opacity: 0;
+}
+
+.Music:hover .color {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+
+
+.Scissors {
+    position: relative; /* Ensures proper alignment of child elements */
+    width: 300px; /* Adjust as needed */
+    height: 300px;
+    display: block;
+    top: 0px; /* Adjust position */
+    left: 0px; /* Adjust position */
+}
+
+/* Wrap both images inside a container to keep them aligned */
+.Scissors img {
+    position: absolute;
+    top: -100px; /* Keep images aligned */
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Show the black-and-white version by default */
+.Scissors .bw {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1; /* Ensure it's on top initially */
+}
+
+/* Hide the color version initially */
+.Scissors .color {
+    opacity: 0;
+    transform: scale(1);
+    z-index: 2; /* Ensure it appears when hovered */
+}
+
+/* Hover effect: Hide BW, show color, and slightly enlarge */
+.Scissors:hover .bw {
+    opacity: 0;
+}
+
+.Scissors:hover .color {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+/* Another way to write the above
+.Scissors :hover {
+    .bw {
+        opacity: 0;
+    }
+
+    .color {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+ */
+
+
+.Book {
+    position: relative; /* Ensures proper alignment of child elements */
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+    display: block;
+    top: 0px; /* Adjust position */
+    left: 0px; /* Adjust position */
+}
+
+/* Wrap both images inside a container to keep them aligned */
+.Book img {
+    position: absolute;
+    top: -80px;
+    right: 50px;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    transform: rotate: 30deg; /* Rotates the book by default */
+}
+
+/* Show the black-and-white version by default */
+.Book .bw {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1; /* Ensures it is on top initially */
+}
+
+/* Hide the color version initially */
+.Book .color {
+    opacity: 0;
+    transform: scale(1);
+    z-index: 2; /* Ensures it appears when hovered */
+}
+
+/* Hover effect: Hide BW, show color, and slightly enlarge */
+.Book:hover .bw {
+    opacity: 0;
+}
+
+.Book:hover .color {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+
+
+.Crayons {
+    position: absolute;
+    width: 200px; /* Adjust as needed */
+    height: 200px;
+    display: block;
+    top: 5px; /* Adjust position */
+    left: 9px; /* Adjust position */
+}
+
+/* Wrap both images inside a container to keep them aligned */
+.Crayons img {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Show the black-and-white version by default */
+.Crayons .bw {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Hide the color version initially */
+.Crayons .color {
+    opacity: 0;
+    transform: scale(1);
+}
+
+/* Hover effect: Hide BW, show color, and slightly enlarge */
+.Crayons:hover .bw {
+    opacity: 0;
+}
+
+.Crayons:hover .color {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.about {
+    max-width: 800px;
+    margin: 5rem auto;
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.about p {
+    text-decoration: none; /* makes sure there's no underline */
+    color: inherit;
+    text-underline: none;/* keeps the same color as the container */
+    font-family: 'Alpino';
+}
+
+
+
+
+
+/* Nik's code here */
+section.cutting-mat-background {
+    height: 620px;
+    width: 800px;
+    background-size: contain;
+    background-image: url('New-background.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* Footer Styling */
+.site-footer {
+    width: 100%;
+    padding: 20px 0;
+    background-color: #fdf5e6; /* matches cream background */
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+    font-family: "Alpino";
+    margin-top: auto;
+    border-top: 1px solid #ccc;
+}
+
+
+

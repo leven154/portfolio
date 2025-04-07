@@ -1,0 +1,244 @@
+/* Global Styles */
+
+@font-face {
+    font-family: 'Alpino';
+    src: url('Alpino-Regular.otf');
+    font-weight: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background: #fff;
+    background-image:
+            linear-gradient(0deg, #e60000 1px, transparent 1px),
+            linear-gradient(90deg, #e60000 1px, transparent 1px);
+    background-size: 40px 40px;
+    color: #333;
+    height: 100vh;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Alpino';
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 20px;
+    font-family: 'Alpino';
+}
+
+/* Navigation Styling */
+nav {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Alpino';
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Wrapper */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.caption {
+    font-family: 'Alpino';
+}
+
+/* Project 1 Header */
+.header {
+    font-size: 180px;
+    font-weight: bold;
+    color: #222;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 4rem;
+}
+
+/* Pinterest-Style Grid with CSS Grid */
+.pinterest-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Auto adjusts column count */
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.pinterest-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pinterest-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.pinterest-card .caption {
+    padding: 1rem;
+    font-size: 1rem;
+    color: #444;
+    text-align: left;
+}
+
+.pinterest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+footer a {
+    color: #f7c2c1;
+}
+
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Buttons */
+.button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    background-color: #222;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #bfa8a1;
+    transform: translateY(-2px);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 4rem;
+    font-weight: lighter;
+    letter-spacing: 0.1em;
+}
+
+/* Large Image with Text Overlay */
+.large-image {
+    position: relative;
+}
+
+.large-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.large-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 15px;
+}
+
+.large-image:hover .overlay {
+    opacity: 1;
+}
+
+.large-image .overlay h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Alpino';
+}
+
+/* Responsive Pinterest Grid */
+@media (max-width: 1024px) {
+    .pinterest-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .pinterest-grid {
+        grid-template-columns: 1fr; /* Stack cards vertically on small screens */
+    }
+
+    .header {
+        font-size: 80px;
+    }
+
+}
+
+.site-footer {
+    width: 100%;
+    padding: 20px 0; /* matches cream background */
+    text-align: center;
+    font-size: 14px;
+    font-family: "Alpino";
+    margin-top: auto;
+    border-top: 1px solid #ccc;
+}

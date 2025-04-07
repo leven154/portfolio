@@ -1,0 +1,168 @@
+/* NAVIGATION STYLES (same as homepage) */
+@font-face {
+    font-family: 'Alpino';
+    src: url('Alpino-Regular.otf');
+    font-weight: normal;
+
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'Times New Roman', serif;
+    font-family: 'Alpino';
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 20px;
+    color: #f9b73f;
+    font-family: 'Alpino';
+}
+
+nav {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Alpino';
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #f9b73f;
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+
+
+/* Base Styles */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f3d9; /* Or use a hex like #ffc0cb for a softer tone */
+    color: #000000;
+}
+
+/* Background Image Setup */
+.mat-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('New-background.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Overlay Text */
+.mat-section h1 {
+    font-size: 100px;
+    color: #f9b73f;
+    padding: 10px 20px;
+    border-radius: 0px;
+    margin-bottom: 40px;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 80%;
+    max-width: 300px;
+    padding-top: 0px;
+    border-radius: 0px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%; /* Full width of the container */
+    padding: 12px; /* Slightly increased padding for better spacing */
+    font-size: 16px; /* Standard font size for readability */
+    border: 1px solid #ccc; /* Standard border */
+    border-radius: 4px; /* Slight rounded corners for a soft, normal look */
+    background: #fff; /* White background for a clean look */
+    resize: vertical;
+    height: 20px; /* Moderate height for input boxes */
+    font-family: 'Alpino';
+}
+
+.contact-form textarea {
+    min-height: 100px; /* Taller height for multi-line input */
+}
+
+
+.contact-form textarea {
+    min-height: 100px; /* Taller for better readability */
+}
+
+
+.contact-form textarea {
+    min-height: 100px;
+}
+
+.contact-form button {
+    padding: 10px 16px;
+    font-size: 20px;
+    font-family: 'Alpino';
+    background: #4ea591;
+    color: #fffade;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button:hover {
+    background: #80adb1;
+    transform: scale(1.04);
+}
+
+
+/* Contact Info Section */
+.contact-info {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 16px;
+    color: #f9b73f;
+    font-weight: bold;
+    font-family: 'Alpino';
+}
+
+.contact-info a {
+    color: #f9b73f;
+    text-decoration: none;
+    font-weight: bold;
+    ont-family: 'Alpino';
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    ont-family: 'Alpino';
+}
