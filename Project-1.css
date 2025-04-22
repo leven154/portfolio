@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Alpino';
+    src: url('Alpino-Regular.otf');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alpino', serif;
+    background-color: #fffdf8;
+    color: #000;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+
+header h1 a {
+    font-size: 28px;
+    color: #000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.project-wrapper {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.project-info h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.project-info .description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.details {
+    list-style: none;
+    font-size: 16px;
+    padding-left: 0;
+}
+
+.details li {
+    margin-bottom: 6px;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.project-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.site-footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Alpino';
+    background-color: #fff7e8;
+    color: black;
+    margin-top: 60px;
+    border-top: 1px solid #ccc;
+}

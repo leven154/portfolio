@@ -19,16 +19,17 @@ about. {
     padding-bottom: 20px;
 }
 
-/* Body Styling */
+
 /* Body Styling */
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    height: 100vh; /* Ensures the body takes the full height of the viewport */
-    background-color: #f8f5e5; /* This is a nice cream shade */
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Alpino';
 }
+
 
 
 /* Header Styling */
@@ -36,24 +37,26 @@ header {
     width: 100%;
     padding: 20px;
     display: flex;
-    justify-content: space-between; /* Moves 'Ari Leventhal' to the left and nav to the right */
+    justify-content: space-between;
     align-items: center;
+    position: relative;
+    font-family: 'Times New Roman', serif;
     font-family: 'Alpino';
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 40px;
     font-weight: normal;
-    margin-left: 20px; /* Adds space from the left edge */
+    margin-left: 20px;
+    color: #000000;
     font-family: 'Alpino';
 }
 
-/* Navigation Styling */
 nav {
     position: absolute;
     top: 30px;
     left: 50%;
-    transform: translateX(-50%); /* Centers the navigation in the middle */
+    transform: translateX(-50%);
     font-family: 'Alpino';
 }
 
@@ -68,10 +71,12 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: black; /* Removes white background color */
+    color: #000000;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 25px;
+
 }
+
 
 /* Workspace Container Styling */
 #workspace {
@@ -79,7 +84,7 @@ header nav ul li a {
     display: flex;
     justify-content: center; /* Centers the background image */
     align-items: center;
-    height: 100%;
+    height: 110%;
     width: 100%;
     flex-grow: 1;
     display: none;
@@ -88,9 +93,9 @@ header nav ul li a {
 /* Background Image Styling */
 #background {
     display: block;
-    max-width: 80%; /* Adjust to ensure it's not full screen */
-    max-height: 80vh; /* Limit the height to 80% of the viewport height */
-    object-fit: contain;
+    max-width: 100%; /* Adjust to ensure it's not full screen */
+    max-height: 90vh; /* Limit the height to 80% of the viewport height */
+
 }
 
 /* Button and Sticker Styles */
@@ -104,8 +109,8 @@ header nav ul li a {
     height: 100px;
     display: block;
     overflow: show;
-    top: 260px; /* Adjust position */
-    left: 537px; /* Adjust position */
+    top: 300px; /* Adjust position */
+    left: 700px; /* Adjust position */
 }
 
 /* Wrap both images inside a container to keep them aligned */
@@ -113,8 +118,8 @@ header nav ul li a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 150%;
     object-fit: cover;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -150,8 +155,8 @@ header nav ul li a {
     position: absolute;
     width: 200px; /* Adjust as needed */
     height: 200px;
-    top: 340px; /* Adjust position */
-    left: 299px; /* Adjust position */
+    top: 400px; /* Adjust position */
+    left: 450px; /* Adjust position */
 }
 
 .Glasses {
@@ -166,8 +171,8 @@ header nav ul li a {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 150%;
+    height: 150%;
     object-fit: contain; /* Keeps aspect ratio while fitting */
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -202,18 +207,19 @@ header nav ul li a {
     position: absolute;
     width: 170px; /* Adjust as needed */
     height: 283px;
-    top: 360px; /* Adjust position */
-    left: 520px; /* Adjust position */
+    top: 560px; /* Adjust position */
+    left: 820px; /* Adjust position */
     display: block;
+
 }
 
 /* Wrap both images inside a container to keep them aligned */
 .Glue img {
     position: absolute;
-    top: 0;
+    top: -200px;
     left: 0;
-    width: 100%;
-    height: 70%;
+    width: 170%;
+    height: 140%;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
@@ -256,7 +262,7 @@ header nav ul li a {
 .Music img {
     position: absolute;
     top: 40px;
-    left: 540px;
+    left: 840px;
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -301,9 +307,9 @@ header nav ul li a {
 .Scissors img {
     position: absolute;
     top: -100px; /* Keep images aligned */
-    left: 30px;
-    width: 100%;
-    height: 100%;
+    left: 100px;
+    width: 140%;
+    height: 140%;
     object-fit: contain;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -332,18 +338,6 @@ header nav ul li a {
     transform: scale(1.2);
 }
 
-/* Another way to write the above
-.Scissors :hover {
-    .bw {
-        opacity: 0;
-    }
-
-    .color {
-        opacity: 1;
-        transform: scale(1.2);
-    }
-}
- */
 
 
 .Book {
@@ -358,11 +352,11 @@ header nav ul li a {
 /* Wrap both images inside a container to keep them aligned */
 .Book img {
     position: absolute;
-    top: -80px;
-    right: 50px;
-    left: 50px;
-    width: 100%;
-    height: 100%;
+    top: 20px;
+    right: 100px;
+    left: 100px;
+    width: 150%;
+    height: 150%;
     object-fit: contain;
     transition: transform 0.2s ease, opacity 0.2s ease;
     transform: rotate: 30deg; /* Rotates the book by default */
@@ -406,10 +400,10 @@ header nav ul li a {
 /* Wrap both images inside a container to keep them aligned */
 .Crayons img {
     position: absolute;
-    top: 100px;
-    left: 300px;
-    width: 100%;
-    height: 100%;
+    top: 0px;
+    left: 500px;
+    width: 150%;
+    height: 150%;
     object-fit: contain;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -459,8 +453,8 @@ header nav ul li a {
 
 /* Nik's code here */
 section.cutting-mat-background {
-    height: 620px;
-    width: 800px;
+    height: 800px;
+    width: 1200px;
     background-size: contain;
     background-image: url('New-background.png');
     background-position: center center;
@@ -472,7 +466,7 @@ section.cutting-mat-background {
 .site-footer {
     width: 100%;
     padding: 20px 0;
-    background-color: #fdf5e6; /* matches cream background */
+    background-color: #ffffff; /* matches cream background */
     text-align: center;
     font-size: 14px;
     color: #444;
@@ -480,6 +474,7 @@ section.cutting-mat-background {
     margin-top: auto;
     border-top: 1px solid #ccc;
 }
+
 
 
 
