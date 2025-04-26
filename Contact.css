@@ -1,4 +1,4 @@
-/* NAVIGATION STYLES (same as homepage) */
+
 @font-face {
     font-family: 'Alpino';
     src: url('Alpino-Regular.otf');
@@ -11,7 +11,6 @@
     font-weight: normal;
 }
 
-
 header {
     width: 100%;
     padding: 20px;
@@ -19,16 +18,13 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    font-family: 'Times New Roman', serif;
-    font-family: 'Alpino';
+    font-family: 'Alpino', 'Times New Roman', serif;
 }
 
 header h1 {
     font-size: 40px;
-    font-weight: normal;
     margin-left: 20px;
-    color: #000000;
-    font-family: 'Alpino';
+    color: #000;
 }
 
 nav {
@@ -36,7 +32,6 @@ nav {
     top: 30px;
     left: 50%;
     transform: translateX(-50%);
-    font-family: 'Alpino';
 }
 
 header nav ul {
@@ -50,23 +45,26 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #000000;
+    color: #000;
     text-decoration: none;
     font-size: 25px;
-
 }
 
 
-/* Base Styles */
 body {
     font-family: 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background: #ffffff; /* Or use a hex like #ffc0cb for a softer tone */
-    color: #000000;
+    background: #fdf6e3;
+    color: #000;
+    cursor: url('circle-24.ico'), auto;
 }
 
-/* Background Image Setup */
+body a:hover, body button:hover {
+    cursor: url('circle-24.ico'), pointer;
+}
+
+
 .mat-section {
     position: relative;
     width: 100%;
@@ -81,53 +79,40 @@ body {
     justify-content: center;
 }
 
-/* Overlay Text */
+
 .mat-section h1 {
     font-size: 80px;
-    color: #000000;
+    color: #000;
     padding: 10px 20px;
-    border-radius: 0px;
     margin-bottom: 40px;
     font-family: 'Alpino';
 }
 
-/* Contact Form */
+
 .contact-form {
     width: 100%;
     max-width: 600px;
-    padding-top: 0px;
-    border-radius: 0px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding-top: 0;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 90%; /* Full width of the container */
-    padding: 12px; /* Slightly increased padding for better spacing */
-    font-size: 16px; /* Standard font size for readability */
-    border: 1px solid #ccc; /* Standard border */
-    border-radius: 4px; /* Slight rounded corners for a soft, normal look */
-    background: #fff; /* White background for a clean look */
-    resize: vertical;
-    height: 20px; /* Moderate height for input boxes */
+    width: 90%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff;
     font-family: 'Alpino';
 }
 
 .contact-form textarea {
-    min-height: 100px; /* Taller height for multi-line input */
-}
-
-
-.contact-form textarea {
-    min-height: 100px; /* Taller for better readability */
-}
-
-
-.contact-form textarea {
     min-height: 100px;
+    resize: vertical;
 }
 
 .contact-form button {
@@ -136,7 +121,7 @@ body {
     font-size: 20px;
     font-family: 'Alpino';
     background: #fff4cf;
-    color: #000000;
+    color: #000;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -147,24 +132,23 @@ body {
 .contact-form button:hover {
     background: #958e77;
     transform: scale(1.04);
-    color: #000000;
+    color: #000;
 }
 
 
-/* Contact Info Section */
 .contact-info {
     max-width: 600px;
     margin: 40px auto;
     padding: 0 20px;
     text-align: center;
     font-size: 16px;
-    color: #000000;
+    color: #000;
     font-weight: bold;
     font-family: 'Alpino';
 }
 
 .contact-info a {
-    color: #000000;
+    color: #000;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Chillax';
@@ -172,5 +156,9 @@ body {
 
 .contact-info a:hover {
     text-decoration: underline;
-    ont-family: 'Alpino';
+}
+
+
+body h1:hover, body p:hover, body a:hover {
+    cursor: url('circle-24.ico'), pointer;
 }

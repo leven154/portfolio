@@ -1,4 +1,4 @@
-/* Basic Reset */
+
 @font-face {
     font-family: 'Alpino';
     src: url('Alpino-Regular.otf');
@@ -20,19 +20,19 @@ about. {
 }
 
 
-/* Body Styling */
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: #fdf6e3;
     font-family: 'Alpino';
 }
 
 
 
-/* Header Styling */
+
 header {
     width: 100%;
     padding: 20px;
@@ -78,42 +78,42 @@ header nav ul li a {
 }
 
 
-/* Workspace Container Styling */
+
 #workspace {
     position: relative;
     display: flex;
-    justify-content: center; /* Centers the background image */
+    justify-content: center;
     align-items: center;
-    height: 110%;
+    height: 100%;
     width: 100%;
     flex-grow: 1;
     display: none;
 }
 
-/* Background Image Styling */
+
 #background {
     display: block;
-    max-width: 100%; /* Adjust to ensure it's not full screen */
-    max-height: 90vh; /* Limit the height to 80% of the viewport height */
+    max-width: 100%;
+    max-height: 90vh;
 
 }
 
-/* Button and Sticker Styles */
+
 .nav-btn {
 }
 
-/* Ensure the tool (coins) is positioned properly */
+
 .tool {
     position: absolute;
-    width: 120px; /* Adjust as needed */
+    width: 120px;
     height: 100px;
     display: block;
     overflow: show;
-    top: 300px; /* Adjust position */
-    left: 700px; /* Adjust position */
+    top: 300px;
+    left: 700px;
 }
 
-/* Wrap both images inside a container to keep them aligned */
+
 .tool img {
     position: absolute;
     top: 0;
@@ -124,26 +124,26 @@ header nav ul li a {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Show the black-and-white version by default */
+
 .tool .bw {
     opacity: 1;
     transform: scale(1);
 }
 
-/* Hide the color version initially */
+
 .tool .color {
     opacity: 0;
     transform: scale(1);
 }
 
-/* Hover effect: Hide BW, show color, and slightly enlarge */
+
 .tool:hover .bw {
     opacity: 0;
 }
 
 .tool:hover .color {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 
@@ -153,52 +153,52 @@ header nav ul li a {
 
 .Glasses {
     position: absolute;
-    width: 200px; /* Adjust as needed */
+    width: 200px;
     height: 200px;
-    top: 400px; /* Adjust position */
-    left: 450px; /* Adjust position */
+    top: 400px;
+    left: 450px;
 }
 
 .Glasses {
-    position: relative; /* Makes it the reference for absolutely positioned children */
-    width: 200px; /* Adjust as needed */
-    height: 160px;  /* Adjust as needed */
+    position: relative;
+    width: 200px;
+    height: 160px;
     display: block;
 }
 
-/* Wrap both images inside the container */
+
 .Glasses img {
     position: absolute;
     top: 0;
     left: 0;
     width: 150%;
     height: 150%;
-    object-fit: contain; /* Keeps aspect ratio while fitting */
+    object-fit: contain;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Show the black-and-white version by default */
+
 .Glasses .bw {
     opacity: 1;
     transform: scale(1);
-    z-index: 1; /* Ensure it's above the color image initially */
+    z-index: 1;
 }
 
-/* Hide the color version initially */
+
 .Glasses .color {
     opacity: 0;
     transform: scale(1);
-    z-index: 2; /* Ensure it appears when hovered */
+    z-index: 2;
 }
 
-/* Hover effect: Hide BW, show color, and slightly enlarge */
+
 .Glasses:hover .bw {
     opacity: 0;
 }
 
 .Glasses:hover .color {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 
@@ -213,52 +213,49 @@ header nav ul li a {
 
 }
 
-/* Wrap both images inside a container to keep them aligned */
+
 .Glue img {
     position: absolute;
     top: -200px;
     left: 0;
-    width: 170%;
+    width: 180%;
     height: 140%;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Show the black-and-white version by default */
+
 .Glue.bw {
     opacity: 1;
     transform: scale(1);
 }
 
-/* Hide the color version initially */
+
 .Glue .color {
     opacity: 0;
     transform: scale(1);
 }
 
-/* Hover effect: Hide BW, show color, and slightly enlarge */
+
 .Glue:hover .bw {
     opacity: 0;
 }
 
 .Glue:hover .color {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1);
 }
-
-
-
 
 
 .Music {
     position: absolute;
-    width: 230px; /* Adjust as needed */
+    width: 230px;
     height: 230px;
     display: block;
-    top: 5px; /* Adjust position */
-    left: 9px; /* Adjust position */
+    top: 5px;
+    left: 9px;
 }
 
-/* Wrap both images inside a container to keep them aligned */
+
 .Music img {
     position: absolute;
     top: 40px;
@@ -269,44 +266,44 @@ header nav ul li a {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Show the black-and-white version by default */
+
 .Music .bw {
     opacity: 1;
     transform: scale(1);
 }
 
-/* Hide the color version initially */
+
 .Music .color {
     opacity: 0;
     transform: scale(1);
 }
 
-/* Hover effect: Hide BW, show color, and slightly enlarge */
+
 .Music:hover .bw {
     opacity: 0;
 }
 
 .Music:hover .color {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 
 
 
 .Scissors {
-    position: relative; /* Ensures proper alignment of child elements */
-    width: 300px; /* Adjust as needed */
+    position: relative;
+    width: 300px;
     height: 300px;
     display: block;
-    top: 0px; /* Adjust position */
-    left: 0px; /* Adjust position */
+    top: 0px;
+    left: 0px;
 }
 
-/* Wrap both images inside a container to keep them aligned */
+
 .Scissors img {
     position: absolute;
-    top: -100px; /* Keep images aligned */
+    top: -100px;
     left: 100px;
     width: 140%;
     height: 140%;
@@ -314,42 +311,42 @@ header nav ul li a {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Show the black-and-white version by default */
+
 .Scissors .bw {
     opacity: 1;
     transform: scale(1);
-    z-index: 1; /* Ensure it's on top initially */
+    z-index: 1;
 }
 
-/* Hide the color version initially */
+
 .Scissors .color {
     opacity: 0;
     transform: scale(1);
-    z-index: 2; /* Ensure it appears when hovered */
+    z-index: 2;
 }
 
-/* Hover effect: Hide BW, show color, and slightly enlarge */
+
 .Scissors:hover .bw {
     opacity: 0;
 }
 
 .Scissors:hover .color {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 
 
 .Book {
-    position: relative; /* Ensures proper alignment of child elements */
-    width: 200px; /* Adjust as needed */
+    position: relative;
+    width: 200px;
     height: 200px;
     display: block;
-    top: 0px; /* Adjust position */
-    left: 0px; /* Adjust position */
+    top: 0px;
+    left: 0px;
 }
 
-/* Wrap both images inside a container to keep them aligned */
+
 .Book img {
     position: absolute;
     top: 20px;
@@ -359,31 +356,31 @@ header nav ul li a {
     height: 150%;
     object-fit: contain;
     transition: transform 0.2s ease, opacity 0.2s ease;
-    transform: rotate: 30deg; /* Rotates the book by default */
+    transform: rotate: 30deg;
 }
 
-/* Show the black-and-white version by default */
+
 .Book .bw {
     opacity: 1;
     transform: scale(1);
-    z-index: 1; /* Ensures it is on top initially */
+    z-index: 1;
 }
 
-/* Hide the color version initially */
+
 .Book .color {
     opacity: 0;
     transform: scale(1);
-    z-index: 2; /* Ensures it appears when hovered */
+    z-index: 2;
 }
 
-/* Hover effect: Hide BW, show color, and slightly enlarge */
+
 .Book:hover .bw {
     opacity: 0;
 }
 
 .Book:hover .color {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 
@@ -397,7 +394,7 @@ header nav ul li a {
     left: 9px; /* Adjust position */
 }
 
-/* Wrap both images inside a container to keep them aligned */
+
 .Crayons img {
     position: absolute;
     top: 0px;
@@ -408,26 +405,26 @@ header nav ul li a {
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* Show the black-and-white version by default */
+
 .Crayons .bw {
     opacity: 1;
     transform: scale(1);
 }
 
-/* Hide the color version initially */
+
 .Crayons .color {
     opacity: 0;
     transform: scale(1);
 }
 
-/* Hover effect: Hide BW, show color, and slightly enlarge */
+
 .Crayons:hover .bw {
     opacity: 0;
 }
 
 .Crayons:hover .color {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1);
 }
 
 .about {
@@ -441,14 +438,42 @@ header nav ul li a {
 }
 
 .about p {
-    text-decoration: none; /* makes sure there's no underline */
+    text-decoration: none;
     color: inherit;
-    text-underline: none;/* keeps the same color as the container */
+    text-underline: none;
     font-family: 'Alpino';
 }
 
+.scrolling-name {
+    width: 100%;
+    overflow: hidden;
+    background-color: fdf6e3;
+    padding: 10px;
+    padding-bottom: 50px;
+    font-family: 'Alpino';
+    font-size: 40px;
+    color: #003dda;
+}
 
+.scrolling-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-loop 40s linear infinite;
+}
 
+.scrolling-track span {
+    white-space: nowrap;
+    padding-right: 50px;
+}
+
+@keyframes scroll-loop {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
 
 
 /* Nik's code here */
@@ -462,11 +487,11 @@ section.cutting-mat-background {
     position: relative;
 }
 
-/* Footer Styling */
+
 .site-footer {
     width: 100%;
     padding: 20px 0;
-    background-color: #ffffff; /* matches cream background */
+    background-color: #fdf6e3; /* matches cream background */
     text-align: center;
     font-size: 14px;
     color: #444;
@@ -474,6 +499,15 @@ section.cutting-mat-background {
     margin-top: auto;
     border-top: 1px solid #ccc;
 }
+
+body {
+    cursor: url('circle-24.ico'), auto;
+}
+
+h1:hover, p:hover, a:hover, .about-text:hover {
+    cursor: url('circle-24.ico'), pointer;
+}
+
 
 
 
