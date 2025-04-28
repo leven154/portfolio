@@ -120,8 +120,8 @@ body a:hover, body button:hover {
     width: 95%;
     font-size: 20px;
     font-family: 'Alpino';
-    background: #fff4cf;
-    color: #000;
+    background: #003dda;
+    color: #fff4cf;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -130,9 +130,9 @@ body a:hover, body button:hover {
 }
 
 .contact-form button:hover {
-    background: #958e77;
+    background: #012fa6;
     transform: scale(1.04);
-    color: #000;
+    color: #fff4cf;
 }
 
 
