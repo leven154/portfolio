@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Alpino';
+    src: url('Alpino-Regular.otf');
+    font-weight: normal;
+
+}
+
+body {
+    margin: 0;
+    background-color: #fdf6e3;
+    font-family: 'Times New Roman', serif;
+    color: #000;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: 'Alpino', serif;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: normal;
+    margin-left: 20px;
+    color: #000000;
+    font-family: 'Alpino', serif;
+}
+
+nav {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Alpino', serif;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.portfolio {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.project {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.project-title {
+    font-size: 28px;
+    color: #003dda;
+    margin-bottom: 15px;
+}
+
+.project-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #003dda;
+    border-radius: 10px;
+}
+
+.project-description {
+    font-size: 18px;
+    margin-top: 15px;
+    color: #333;
+}
